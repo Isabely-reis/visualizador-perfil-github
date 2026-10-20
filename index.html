@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizador de Perfil do GitHub</title>
 
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/animations.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/animations.css">
+    <link rel="stylesheet" href="src/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
 
@@ -23,13 +23,14 @@
                 <h2>Buscar Usuário</h2>
                 <p class="search-hint">Digite o nome de usuário do GitHub e tenha acesso aos dados do perfil</p>
                 <input type="text" id="input-search" placeholder="Digite o nome do usuário no GitHub">
-                
+
                 <input type="button" value="Buscar" id="btn-search">
             </header>
 
-            <div class="profile-results"></div>
+            <div class="profile-result" id="profile-result"></div>
         </section>
     </main>
+   <script type="module" src="src/js/index.js"></script>
 </body>
 
 </html>

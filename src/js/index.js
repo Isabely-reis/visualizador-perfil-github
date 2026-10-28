@@ -1,4 +1,4 @@
-import { fetchGithubUser } from './githuApi.js';
+import { fetchGithubUser, fetchGithubRepos } from './githuApi.js';
 import { renderProfile } from './profileView.js';
 
 
@@ -17,7 +17,12 @@ btnSearch.addEventListener('click', async () => {
     profileResult.innerHTML = `<p class="loading">Carregando...</p>`;
     try {
         const userData = await fetchGithubUser(userName);
-        renderProfile(userData, profileResult);
+        const userRepos = await fetchGithubRepos(userName);
+        console.log(userRepos);
+
+       
+       
+        renderProfile(userData, userRepos, profileResult);
     } catch (error) {
         console.error('Erro ao buscar o perfil do usuário:', error);
         alert('Usuário não encontrado. Por favor, verifique o nome de usuário e tente novamente.');

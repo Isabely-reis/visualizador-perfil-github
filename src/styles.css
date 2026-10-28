@@ -149,16 +149,13 @@ main {
   width: 100%;
 }
 
-.profile-card {
+.profile-counters {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--spacing-md);
+  gap: 32px;
+  justify-content: center;
   width: 100%;
-  max-width: none;
-  margin: 0 auto;
-  padding: var(--spacing-md);
-  text-align: left;
+  margin: 40px 0;
+  text-align: center;
 }
 
 .profile-card img {
@@ -191,10 +188,12 @@ main {
 
 .profile-counters {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 32px;
-  justify-content: flex-start;
-  margin: 80px 0 40px 4.75rem;
-  
+  width: 100%;
+  margin: 80px auto 40px;
+  text-align: center;
 }
 
 .profile-counters h4 {

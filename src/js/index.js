@@ -29,3 +29,9 @@ btnSearch.addEventListener('click', async () => {
         profileResult.innerHTML = "";
     }
 });
+
+inputSearch.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        btnSearch.click();
+    }
+});
